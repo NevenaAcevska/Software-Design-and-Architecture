@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="../jquery/jquery-ui.css">
+    <script src="../jquery/jquery.js"></script>
+    <script src="../jquery/jquery-ui.js"></script>
+    <script src="Page 1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        @font-face{
+            font-family: "Bukhari";
+            src: url("../Fonts/Bukhari/Bukhari.ttf");
+        }
+        @font-face {
+            font-family: "Gagalin";
+            src: url("../Fonts/Gagalin/Gagalin-Regular.otf");
+        }
+        html{
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background-color: #F5BC99;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #Page{
+            /* position: absolute;
+            background-color: #F5BC99;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            height: max-content; */
+        }
+        #MainPage {
+            background-image: url("../Images/FruitBackgroundPic.jpg");
+            opacity: 0.85;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+            margin-top: 102px;
+        }
+        ul{
+            list-style: none;
+            display: inline;
+            margin-left: 50px;
+        }
+        li{
+            font-size: 28px;
+            color: #F5BC99;
+            display: inline-block;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .buttons{
+            float: right;
+
+
+        }
+        .form {
+
+            position: absolute;
+            color: black;
+            border-style: solid;
+            border-width: 3px;
+            border-left-width: 10px;
+            border-right-width: 10px;
+            padding: 10px 10px;
+            float: right;
+            background-color: black;
+            left: 20px;
+            border-color: transparent;
+            margin: 0;
+
+        }
+        .search-text{
+            color: white;
+        }
+
+
+
+        #PageName{
+            padding-top: 0;
+            position: fixed;
+            display: inline-block;
+            margin-left: 25%;
+            top: 13px;
+            float: left;
+            font-family: "Bukhari", serif;
+            font-size: 53px;
+            color: #FFDE59;
+        }
+        #Login{
+            color : black;
+            font-size: 20px;
+            background-color: #FFDE59; /* Green */
+            border: none;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        .button1 {
+            background-color: black;
+            color: white;
+            border:none
+        }
+        .search-button {
+            background-color: black;
+            color: white;
+            border:none
+        }
+        .pic1{
+            position: top 50px;
+        }
+
+        .header{
+            top:0;
+            left:0;
+            width:100%;
+            height: 100px;
+            padding: 10px 10px 0 10px;
+            background-color:rgba(255, 255, 255, 1);
+            position: fixed;
+            min-height: 0;
+            z-index: 9;
+        }
+        #logo{
+            width: 120px;
+            height: 70px;
+            margin-left: 25%;
+            display: inline;
+            top: 0;
+            float: left;
+        }
+
+        #BestSalesHeader{
+            font-family: "Gagalin", serif;
+        }
+        #BestSales{
+            display: inline-block;
+            float: right;
+            width: 30%;
+            height: max-content;
+            position: relative;
+        }
+
+        #footer {
+            margin-left: -8px;
+            top: 124.5%;
+            width:100%;
+            height: 100px;
+            padding: 20px 10px 0 10px;
+            background-color: black;
+            position: relative;
+            min-height: 0;
+        }
+        #Widgets{
+            margin-left: 27%;
+            display: inline-block;
+        }
+        .Widgets{
+            height: 50px;
+            width: 50px;
+        }
+        #Contact{
+            color: white;
+            float: right;
+            margin-right: 28%;
+        }
+        #Dialog{
+            display: none;
+        }
+        body > form{
+            top: 100px;
+            height: 600px;
+            width: 250px;
+        }
+
+        h1{
+            color: white;
+        }
+        #sobi{
+            width: 148.3px;
+            height: 24px;
+        }
+        }
+    </style>
+
+    </head>
+    <body>
+     
+        <form class="form">
+            <h1 class="seaarch-text">Search</h1>
+           <h1>Destination</h1>  <br><input type="text" placeholder="Skopje" class="text"><br>
+            <h1>  Check-in date: </h1> <br><input type="date" name="Lastname" class="text"><br>
+            <h1> Check-out date: </h1> <br><input type="date" name="email" class="text"><br>
+            <h1> 11-night stay </h1>   <br> <select id="sobi" name="sobi">
+            <option value="soba1">1 guest 1 room</option>
+            <option value="soba2">2 guest 1 room</option>
+            <option value="soba3">2 guest 1 room</option>
+        </select><br>
+            
+            
+
+</div>
+</body>
+</html>

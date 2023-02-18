@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="../jquery/jquery-ui.css">
+    <script src="../jquery/jquery.js"></script>
+    <script src="../jquery/jquery-ui.js"></script>
+    <script src="Page 1.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        @font-face{
+            font-family: "Bukhari";
+            src: url("../Fonts/Bukhari/Bukhari.ttf");
+        }
+        @font-face {
+            font-family: "Gagalin";
+            src: url("../Fonts/Gagalin/Gagalin-Regular.otf");
+        }
+        html{
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background-color: #F5BC99;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #Page{
+            /* position: absolute;
+            background-color: #F5BC99;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            height: max-content; */
+        }
+        #MainPage {
+            background-image: url("../Images/FruitBackgroundPic.jpg");
+            opacity: 0.85;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 100%;
+            width: 100%;
+            margin-top: 102px;
+        }
+        ul{
+            list-style: none;
+            display: inline;
+            margin-left: 50px;
+        }
+        li{
+            font-size: 28px;
+            color: #F5BC99;
+            display: inline-block;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .buttons{
+            float: right;
+
+
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            margin: 0;
+
+        }
+        #PageName{
+            padding-top: 0;
+            position: fixed;
+            display: inline-block;
+            margin-left: 25%;
+            top: 13px;
+            float: left;
+            font-family: "Bukhari", serif;
+            font-size: 53px;
+            color: #FFDE59;
+        }
+        #Login{
+            color : black;
+            font-size: 20px;
+            background-color: #FFDE59; /* Green */
+            border: none;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        .button1 {
+            background-color: black;
+            color: white;
+            border:none
+        }
+        .search-button {
+            background-color: black;
+            color: white;
+            border:none
+        }
+        .pic1{
+            position: top 50px;
+        }
+
+        .header{
+            top:0;
+            left:0;
+            width:100%;
+            height: 100px;
+            padding: 10px 10px 0 10px;
+            background-color:rgba(255, 255, 255, 1);
+            position: fixed;
+            min-height: 0;
+            z-index: 9;
+        }
+        #logo{
+            width: 120px;
+            height: 70px;
+            margin-left: 25%;
+            display: inline;
+            top: 0;
+            float: left;
+        }
+
+        #BestSalesHeader{
+            font-family: "Gagalin", serif;
+        }
+        #BestSales{
+            display: inline-block;
+            float: right;
+            width: 30%;
+            height: max-content;
+            position: relative;
+        }
+
+        #footer {
+            margin-left: -8px;
+            top: 124.5%;
+            width:100%;
+            height: 100px;
+            padding: 20px 10px 0 10px;
+            background-color: black;
+            position: relative;
+            min-height: 0;
+        }
+        #Widgets{
+            margin-left: 27%;
+            display: inline-block;
+        }
+        .Widgets{
+            height: 50px;
+            width: 50px;
+        }
+        #Contact{
+            color: white;
+            float: right;
+            margin-right: 28%;
+        }
+        #Dialog{
+            display: none;
+        }
+        body > div.form > form > input[type=search]:nth-child(2){
+            width: 412px;
+            height: 62px;
+            text-align: center
+        }
+        body > div.form > form > input[type=date]:nth-child(5) {
+            width: 412px;
+            height: 62px;
+            text-align: center
+        }
+        body > div.buttons > a{
+            font-size: 50px;
+        }
+        #sobi{
+            width: 412px;
+            height: 62px;
+            text-align: center
+        }
+        body > div.buttons{
+            display: flex;
+            position: absolute;
+            right: 50px;
+        }
+        .button1{
+            margin-right: 10px;
+        }
+        #button1{
+            width: 112px;
+            height: 52px;
+        }
+        #button2{
+            width: 112px;
+            height: 52px;
+        }
+        body > div.form > form > button{
+            width: 212px;
+            height: 52px;
+        }
+        body > div.form{
+            position: absolute;
+            top: 96px;
+            left: 550px;
+        }
+        body > div.form > form > input[type=search]:nth-child(8){
+            width: 412px;
+            height: 62px;
+            text-align: center
+        }
+        body > div.pics > img.pic1{
+            position: absolute;
+            top: 50px;
+            left: 0px;
+        }
+        body > div.pics > img.pic4{
+            position: absolute;
+            top: 500px;
+            left: 0px;
+        }
+        body > div.pics > img.pic2{
+            position: absolute;
+            top: 150px;
+            right: 100px;
+        }
+        body > div.pics > img.pic3{
+            position: absolute;
+            right: 250px;
+            bottom: 50px;
+        }
+
+
+    </style>
+
+    </head>
+    <body>
+     
+   <div class="buttons">
+    <button class="button1" id="button1"><a href="login.html">Log In</a></button>
+    <button class="button1" id="button2"><a href="register.html">Sign In</a></button><br>
+    <a><ion-icon name="globe-outline"></ion-icon></a>
+   </div>
+   <div class="form">
+    <form class="form">
+    <br> <input type="search" placeholder="Where are you going?" size=><br>
+    <br> <input type="date" placehodler="Check in-Check out " name="check-in"><br>
+        <br> <select id="sobi" name="sobi">
+        <option value="soba1">1 guest - 1 room</option>
+        <option value="soba2">2 guests - 1 room</option>
+        <option value="soba3">3 guests - 1 room</option>
+        <option value="soba3">4 guests - 1 room</option>
+    </select><br>
+    <br> <button class="search-button"><a href="asd">Search</a></button>
+</form>
+</div>
+<div class="pics">
+<img src="pic1.png" class="pic1">
+<img src="pic4.png" class="pic4">
+<img src="pic3.png" class="pic3">
+<img src="pic2.png" class="pic2">
+</div>
+
+</div>
+</body>
+</html>

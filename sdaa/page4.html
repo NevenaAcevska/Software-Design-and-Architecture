@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #F5BC99">
+<style>
+    @font-face{
+        font-family: "Bukhari";
+        src: url("../Fonts/Bukhari/Bukhari.ttf");
+    }
+    @font-face {
+        font-family: "Gagalin";
+        src: url("../Fonts/Gagalin/Gagalin-Regular.otf");
+    }
+    html{
+        height: 100%;
+    }
+    body {
+        height: 100%;
+        background-color: #F5BC99;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    .col-25 {
+        -ms-flex: 25%;
+        flex: 25%;
+    }
+
+    .col-50 {
+        -ms-flex: 50%;
+        flex: 50%;
+    }
+
+    .col-75 {
+        -ms-flex: 75%;
+        flex: 75%;
+    }
+
+    .col-25,
+    .col-50,
+    .col-75 {
+        padding: 0 16px;
+    }
+
+    .container {
+        background-color: white;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+    body > div > div > div{
+        width: 600px;
+        height: 450px;
+        position: absolute;
+        left: 450px;
+        top: 100px;
+    }
+    body > div > div > div > form > div > h3{
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        border-top-width: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    input[type=text], input[type=password], textarea {
+        width: 200px;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+    body > div > div > div > form > div > div:nth-child(2){
+        width: 200px;
+        position: absolute;
+        left: 50px;
+        top: 127px;
+    }
+    body > div > div > div > form > div > div:nth-child(3){
+        width: 200px;
+        position: absolute;
+        left: 360px;
+        top: 127px;
+    }
+    body > div > div > div > form > div > div:nth-child(4){
+        width: 200px;
+        position: absolute;
+        left: 50px;
+        top: 218px;
+    }
+    body > div > div > div > form > div > div:nth-child(5){
+        width: 200px;
+        position: absolute;
+        left: 347px;
+        top: 218px;
+    }
+    body > div > div > div > form > input{
+        position: absolute;
+        top: 350px;
+        width: 320px;
+        left: 145px;
+    }
+</style>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="/action_page.php">
+
+
+
+                <div class="col-50">
+                    <h3>Payment</h3>
+
+
+                   <div> <label for="cname">Name on Card</label>
+                       <input type="text" id="cname" name="cardname" placeholder="John More Doe"><br></div>
+
+                   <div> <label for="ccnum">Credit card number</label>
+                       <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br></div>
+
+                    <div><label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September"></div>
+
+
+                        <div class="col-50">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+
+
+                </div>
+
+
+
+                <input type="submit" value="Pay" class="btn">
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
